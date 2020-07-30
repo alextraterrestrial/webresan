@@ -1,0 +1,355 @@
+
+body{
+	width: 100vw;
+    font-family: 'Nunito', sans-serif;
+    background-color: #49545e;
+    background-image: url(bilder/trees.png);
+    background-size: contain;
+    display: flex;
+	flex-direction: column;
+	align-items: center;
+    margin: 0;
+}
+
+@font-face {
+    font-family: 'freepixel';
+    src: url(typsnitt/freepixel.ttf);
+}
+
+/*OVER THE FOLD*/
+h1{
+	font-family: 'freepixel';
+	font-size: 50px;
+	margin-bottom: 0px;
+	margin-top: 5px;
+	font-weight: normal;
+	
+}
+h2{
+	font-family: 'nunito';
+	font-size: 20px;
+	margin-top: 0px;
+	margin-bottom: 40px;
+	font-weight: normal;
+}
+.overthefold{
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background-color: #f9f9f9;
+    width: 100vw;
+    height: 300px;
+}
+.overthefold > img{
+    height: 80%;
+	margin-right: 40px;
+}
+.overthefold > div{
+	width: 30vw;
+}
+.startpil{
+    height: 100px;
+}
+.startpil img {
+    height: 60%;
+    margin-top: 20px;
+}
+
+
+/*MENY*/
+.meny{
+    width: 100vw;
+    height: 68px;
+}
+.meny iframe{
+    width: 100%;
+    height: 100%;
+}
+
+
+/*CONTAINER DIV*/
+.stora {
+    margin-top: 10px;
+	margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: 35vw 10vw 35vw;
+    grid-template-rows: repeat(20);
+    width: 80vw;  
+}
+
+
+/*TIDSLINJELÅDORNA*/
+.box {
+    display: flex;
+    flex-direction: column;
+    border-radius: 19px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    background-color: #f9f9f9;
+	overflow: hidden;
+	width: 100%;
+    box-shadow: 5px 10px 5px rgba(0, 0, 0, .2), 12px 17px 0 rgba(50, 50, 50, .90);
+}
+
+.rubrik {
+    display: flex;
+	justify-content: flex-start;	
+    border-bottom: none;
+    background-color: #d1cccc;
+    font-family: 'freepixel'
+}
+
+.rubrik a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.innehall {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.innehall p {
+    margin: 16px;
+    font-family: 'nunito';
+}
+
+.innehall img{
+    width: 100%;
+}
+.innehall > iframe{
+    width: 100%;
+    height: 350px;
+}
+.innehall a{
+    width: 100%;
+}
+
+.bild{
+    display: flex;
+    justify-content: center;
+}
+
+.innehall .bildtext{
+	display: flex;
+	width: 100%;
+	margin-right: 20px;	
+	justify-content: flex-end;
+	font-size: 0.6rem;
+	
+}
+
+.ar {
+	  margin-left: 20px;
+    padding: 5px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+	font-family: 'freepixel';
+	margin-left: 4px;
+	font-size: 1.6rem;
+}
+.ar > img{
+    height: 30px;
+    margin: 10px;
+}
+
+.text {
+  	padding: 5px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+	font-size: 1.6rem;
+    font-family: 'freepixel';
+/*    word-break: break-all;*/
+}
+
+.arrow{  
+	  display: flex;
+	  justify-content: flex-start;
+	  align-items: flex-start;
+      grid-column: 2;
+	  vertical-align: middle;
+}
+.arrow:nth-of-type(even){
+    justify-content: flex-end;
+}
+#arrowone{
+    grid-row: 1/3;
+}
+#arrowtwo{
+    grid-row: 3/5;
+}
+#arrowthree{
+    grid-row: 5/7;
+}
+#arrowfour{
+    grid-row: 7/9;
+}
+#arrowfive{
+    grid-row: 9/11;
+}
+#arrowsix{
+    grid-row: 11/13;
+}
+#arrowseven{
+    grid-row: 13/15;
+}
+#arroweight{
+    grid-row: 15/17;
+}
+#arrownine{
+    grid-row: 17/19;
+}
+#arrowten{
+    grid-row: 19/21;
+}
+
+.arrow > img{
+  	width: 25px;
+	  margin-top: 20px;
+}
+
+
+/*TIDSLINJEN*/
+.tidslinjecontainer{
+	  grid-column: 2;
+	  grid-row: 1/21;
+	  display: grid;
+	  justify-content: center;
+}
+.linje{
+	display: grid;
+    width: 50px;
+    height: 100%;
+    background-image: url(bilder/asfaltsvag.svg);
+    background-size: contain;
+}
+
+
+/*BILEN*/
+.bilen{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    grid-row: 1/22;
+    grid-column: 2;
+    transition: 5s;	
+    overflow: hidden;
+}
+
+.bilen > img{
+	margin-top: 0px;
+    margin-bottom: 0px;
+	width: 30px;
+    transition: 6s;	
+}
+
+#ett:hover ~ .bilen img{
+    margin-top: 20px;
+    transition: 2s;	
+}
+
+#tva:hover ~ .bilen img{
+    margin-top: 500px;
+    transition: 2s;
+}
+
+#tre:hover ~.bilen img{
+    margin-top: 990px;
+    transition: 2s;
+}
+#fyra:hover ~.bilen img{
+    margin-top: 1490px;
+    transition: 2s;
+}
+#fem:hover ~.bilen img{
+    margin-top: 1950px;
+    transition: 2s;
+}
+#sex:hover ~.bilen img{
+    margin-top: 2470px;
+    transition: 2s;
+}
+#sju:hover ~.bilen img{
+    margin-top: 2940px;
+    transition: 2s;
+}
+#atta:hover ~.bilen img{
+    margin-top: 3370px;
+    transition: 2s;
+}
+#nio:hover ~.bilen img{
+    margin-top: 3830px;
+    transition: 2s;
+}
+#tio:hover ~.bilen img{
+    margin-top: 4230px;
+    transition: 2s;
+}
+
+
+/*LÅDORNAS PLACERING*/
+
+.box:nth-child(odd){
+    grid-column: 1/2;
+}
+
+.box:nth-child(even){
+    grid-column: 3/4;
+}
+#ett{
+    grid-row: 1/3;
+}
+#tva{
+    grid-row: 3/5;
+}
+#tre{
+    grid-row: 5/7;
+}
+#fyra{
+    grid-row: 7/9;
+}
+#fem{
+    grid-row: 9/11;
+}
+#sex{
+    grid-row: 11/13;
+}
+#sju{
+    grid-row: 13/15;
+}
+#atta{
+    grid-row: 15/17;
+}
+#nio{
+    grid-row: 17/19;
+}
+#tio{
+    grid-row: 19/21;
+}
+
+
+/*FOOTER*/
+.footer{
+	  display: flex;
+	  justify-content: space-around;
+	  align-items: center;
+	  width: 100vw;
+	  height: 68px;
+	  background-color: #d1cccc;
+	  color: #f9f9f9;
+      font-family: "freepixel"; 
+}
+
+.footer iframe{
+    width: 100%;
+    height: 100%
+}
+
+iframe{
+    border: none;
+}

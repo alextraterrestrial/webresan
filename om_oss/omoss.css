@@ -1,0 +1,219 @@
+body{
+    margin: auto;
+    background-color: #F9F9F9;
+    margin-bottom: 10vh;    
+}
+.meny{
+    width: 100vw;
+    height: 68px; 
+}
+.meny iframe{
+    height: 100%;
+    width: 100%;
+    border: none;
+}
+
+/*Logotyp*/
+.logodiv{
+    margin-top: 50px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+.logodiv img{
+    height: 200px;
+}
+/*infotext*/
+.omoss{
+    display: flex;
+    flex-direction:column;
+    padding: 5vh;
+    width: 50vw;
+    height: auto;
+    font-family: 'Nunito', sans-serif;
+    margin: auto;
+    font-size: 1rem;
+    align-items: flex-start;
+}
+.rubrik{
+    font-family:'Nunito', sans-serif; 
+    margin-top: 20px;
+    font-size: 1rem;
+}
+/*container*/
+.gruppfoto{
+    padding: 40px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto;
+    width:80%;
+    height: 80vh; 
+}
+.storlek{
+    width: 20vw;
+    height: 30vh;
+    background-size: contain;
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+.storlek img{
+    height: 100px;
+}
+/*bildtext*/
+.text {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items:flex-end;
+    width: 100%;
+    font-family: 'Nunito', sans-serif;
+    font-size: 0.75rem;
+    padding: 5px;
+}
+#text1{
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+#text2{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+#text3{
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+#text4{
+    grid-column: 4/5;
+    grid-row: 2/3;
+}
+#text5{
+    grid-column: 1/2;
+    grid-row: 4/5;
+}
+#text6{
+    grid-column: 2/3;
+    grid-row: 4/5;
+}
+#text7{
+    grid-column: 3/4;
+    grid-row: 4/5;
+}
+#text8{
+    grid-column: 4/5;
+    grid-row: 4/5;
+}
+/*Bilder*/
+#foto1{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1/2;
+    background-image:url(hampus4.jpg);
+    background-image:url(hampus2.jpg);  
+}
+
+
+#foto1:hover {
+    background-image:url(hampus4.jpg);   
+}
+
+#foto2{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1/2;
+    background-image:url(andrea5.jpg);
+    background-image:url(Andrea%203.jpg);
+}
+#foto2:hover{
+    background-image:url(andrea5.jpg);
+    background-size: contain;
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+#foto3{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1/2;
+    background-image:url(Alex%204.jpg);
+    background-image:url(Alex3.jpg);  
+}
+#foto3:hover{
+    background-image:url(Alex%204.jpg);
+    background-size: contain;
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+#foto4{
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 1/2;
+    background-image:url(Julia5.jpg);
+    background-image:url(julia3.jpg); 
+}
+#foto4:hover{
+    background-image:url(Julia5.jpg);
+    background-size: contain;
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+#foto5{   
+    margin-top: 100px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2/3;
+    background-image:url(Fredrik%201.jpg);
+    background-image:url(Fredrik.jpg);   
+}
+#foto5:hover{
+    background-image:url(Fredrik%201.jpg);
+    background-size: contain;
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+#foto6{
+    margin-top: 100px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2/3;
+    background-image:url(Astrid%20ny.jpg);
+    background-image:url(Astrid4.jpg);
+}
+#foto6:hover{
+    background-image:url(Astrid%20ny.jpg);
+    background-size: contain;
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+#foto7{
+    margin-top: 100px;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2/3;
+    background-image:url(Mattis%202.jpg);
+    background-image:url(Mattis.jpg);
+}
+#foto7:hover{
+    background-image:url(Mattis%202.jpg);
+    background-size: contain;
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+#foto8{
+    margin-top: 100px;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 2/3;
+    background-image:url(Rasmus1.jpg);
+    background-image:url(Rasmus.jpg);   
+}
+#foto8:hover{
+    background-image:url(Rasmus1.jpg);
+    background-size: contain;
+    background-position: center; 
+    background-repeat: no-repeat;  
+}
+
+.osynlig img {
+    width: 0px;
+    height: 0px;
+}

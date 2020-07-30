@@ -1,0 +1,215 @@
+body {
+	  background-color: #49545e;
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper {
+	  width: 100vw;
+    font-family: 'Nunito', sans-serif;
+    background-color: #49545e;
+    background-image: url(../bilder/trees.png);
+    background-size: contain;
+    display: grid;
+    grid-template-columns: 350px 1fr;
+    padding-top: 50px;
+}
+
+.timeline {
+    margin-right: 80px;
+}
+
+iframe {
+	 border: none;
+	 height: 100%;
+	 width: 100%;
+}
+
+.artikeldiv {
+    grid-column: 2;
+
+}
+
+.artikelinnehall {
+	  background-color: white;
+    flex-direction: column;
+	  padding: 5vh;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    margin-left: 0vh;
+    box-shadow: 5px 10px 5px rgba(0, 0, 0, .2), 12px 17px 0 rgba(50, 50, 50, .90);
+}
+
+.backtoindex {
+    width: 200px;
+    background-color: #D1CCCC;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+
+.backtoindex img {
+    width: 30px;
+    vertical-align: middle;
+}
+
+/* CSS FÖR SMAL TIDSLINJE*/
+
+/*CONTAINER DIV*/
+.stora {
+    display: flex;
+	flex-direction: column;
+	align-items: center;
+    width: 100%; 
+  	height: auto;
+    margin-top: 0px;
+}
+
+/*TIDSLINJELÅDORNA*/
+.box {
+	margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 19px;
+    background-color: #f9f9f9;
+	overflow: hidden;
+	width: 90%;
+/*    box-shadow: 0 5px 10px 5px rgba(0, 0, 0, .2), 15px 20px 0 rgba(50, 50, 50, .90);*/
+}
+
+.rubrik {
+      display: flex;
+	    justify-content: space-around;
+	    z-index: 1;
+      border-bottom: none;
+}
+
+.innehall{
+     font-size: 0px;
+     margin: 0px;
+     transition: all 0.4s, ease;
+}
+.innehall p {
+    margin: 0px;
+}
+
+.innehall iframe{
+    height: 0px;
+}
+.ar {
+    min-height: 60px;
+	margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  	font-family: 'freepixel';
+	margin-left: 4px;
+	font-size: 1.6rem;
+}
+.ar img{
+    height: 30px;
+    margin: 10px;
+    vertical-align: middle;
+}
+
+.text {
+	padding: 15px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+	font-size: 1.6rem;
+    font-family: 'freepixel';
+}
+
+.undertext {
+    font-style: italic;
+    padding: 0px;
+    margin: 0px;
+}
+
+a {
+  margin: 0px;
+  text-decoration: none;
+  color: inherit;
+}
+.footer{
+    align-self: flex-end;
+}
+
+/*COOLA DROPDOWNEFFEKTER*/
+.rubrik:hover ~ .innehall{
+    font-size: 16px;
+    transition: all 0.2s linear; 
+    transition-delay: 0.4s;
+}
+.rubrik:hover ~ .innehall p{
+    margin: 10px;
+    transition: all 0.2s linear; 
+    transition-delay: 0.4s;
+}
+
+.rubrik:hover ~ .innehall iframe{
+    height: 150px;
+    transition: all 0.2s linear; 
+    transition-delay: 0.4s;
+}
+
+#fyllerarinnehall:hover{
+    height: 150px;
+    transition: all 0.2s linear; 
+    transition-delay: 0.4s;
+}
+
+.active:hover ~.innehall{
+     font-size:0px;
+	   margin: 0px;
+}
+.active:hover ~.innehall p{
+	   margin: 0px;
+}
+
+.box > .rubrik{
+    background-color: #d1cccc;
+}
+
+.box:hover .rubrik{
+    background-color: #FFEDAF;
+}
+
+.active{
+    background-color: #FF776D !important;
+}
+
+@font-face {
+font-family: "freepixel";
+src: url(fonts/freepixel.ttf);
+}
+
+
+.youtube {
+    height: 40vh;
+    width: 40vw;
+    padding-bottom: 0px; 
+}
+
+.bild2 {
+    width: 400px;
+}
+
+.bildiphone {
+    height: 300px;   
+}
+
+.bildlike   {
+    width: 16px;
+    height: 16px;
+}
+
+.hurra {
+    height: 50vh;
+}
+
+.pirat  {
+    height: 300px;
+}
+

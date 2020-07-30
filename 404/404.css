@@ -1,0 +1,50 @@
+body {
+    background-color: #49545E;
+    justify-content: center;
+    display: flex;
+    font-family: 'Nunito', sans-serif;
+}
+
+@font-face {
+font-family: "freepixel";
+src: url("fonts/freepixel.ttf");
+}
+.wrapper {
+    background-color: #F9F9F9;
+    width: 70vw;
+    border-radius: 19px;
+    margin-top: 10vh;
+}
+
+.rubrik {
+    padding: 5px;
+    background-color: #d1cccc;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 1.5rem;
+    font-family: 'freepixel';
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    display: flex;
+    
+}
+
+.content {
+    display: flex;
+}
+.text {
+    flex-wrap: wrap;
+}
+.gif img {
+    width: 20vw;
+    height: 20vw;
+    margin-top: 10px;
+}
+
+.heading {
+    font-size: 1.6rem;
+}
+a img {
+    height: 55px;
+    vertical-align: middle;
+}
